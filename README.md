@@ -12,6 +12,9 @@
 [Лемматизатор в грамматическом словаре](http://www.solarix.ru/for_developers/api/lemmatizator-api.shtml)|-|Высокая|Высокая|Небольшой
 
 ## Требования к аппаратуре
+Процессор не хуже Intel Pentium 4, оперативная память не менее 2 Гб.
+
+## Требования к программному обеспечению
 Проект собирается для 32х- и 64х-битных платформ Windows.
 
 ## Средства разработки программного продукта
@@ -65,16 +68,21 @@ for (auto &&lemma: lemmatize("Хливкие шорьки пырялись по 
   std::cout << lemma << std::endl;
 ```
 *Вывод:*
+```
 хливкий
 шорька
 пыряться
 по
 нава
+```
 
 ## Детали реализации
 Предполагается использование похода, основанного на нейронных сетях, например, одного из опубликованных в [1],[2],[3].
 
+## Тестирование
+Предполагается тестирование результатов лемматизации на размеченном корпусе русскоязычных текстов [OpenCorpora](http://opencorpora.org/).
+
 ## Файлы и ссылки
-[1] Abhisek Chakrabarty, Akshay Chaturvedi, Utpal Garain, "A Neural Lemmatizer for Bengali", 2016 (https://pdfs.semanticscholar.org/12c6/1ee4f804d4007fc12cfd0d13ba260c051e48.pdf);
-[2] Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, Yoshua Bengio, "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation", 2014 (https://arxiv.org/pdf/1406.1078.pdf);
-[3] Mike Kestemont, Guy de Pauw, Renske van Nie, Walter Daelemans, "Lemmatization for variation-rich languages using deep learning", 2016.
+* [1] Abhisek Chakrabarty, Akshay Chaturvedi, Utpal Garain, "A Neural Lemmatizer for Bengali", 2016 (https://pdfs.semanticscholar.org/12c6/1ee4f804d4007fc12cfd0d13ba260c051e48.pdf);
+* [2] Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, Yoshua Bengio, "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation", 2014 (https://arxiv.org/pdf/1406.1078.pdf);
+* [3] Mike Kestemont, Guy de Pauw, Renske van Nie, Walter Daelemans, "Lemmatization for variation-rich languages using deep learning", 2016.
