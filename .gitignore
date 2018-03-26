@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Test examples files
+testing/unambiguos_lemmatizations.txt
+testing/unambiguos_lemmatizations_from_freq_list.txt
+testing/freq_list.txt
