@@ -16,12 +16,7 @@ namespace lemmatizer {
         return pimpl_->next_lemma();
     }
 
-    bool Lemmatization::is_complete() const {
-        return pimpl_->is_complete();
-    }
-
     LemmaIter Lemmatization::begin() {
-        pimpl_->next_lemma();
         return LemmaIter(*this);
     }
 

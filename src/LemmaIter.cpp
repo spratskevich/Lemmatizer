@@ -8,7 +8,12 @@ namespace lemmatizer {
         : lemmatization_ptr_() {}
 
     LemmaIter::LemmaIter(Lemmatization &lemmatization)
-        : lemmatization_ptr_(&lemmatization) {}
+        : lemmatization_ptr_(&lemmatization) {
+        // Obtain the first lemma at the beginning of lemmatization
+        if (lemmatization.last_lemma().empty())
+            if (!lemmatization.next_lemma())
+                lemmatization_ptr_ = nullptr;
+    }
 
     bool LemmaIter::operator==(LemmaIter rhs) const {
         return lemmatization_ptr_ == rhs.lemmatization_ptr_;
@@ -18,7 +23,7 @@ namespace lemmatizer {
         return !(*this == rhs);
     }
 
-    // TODO: add end-iterator dereferencing exception hadling in debug build
+    // TODO: add end-iterator dereferencing/increment exception hadling in debug build
 
     LemmaIter::reference LemmaIter::operator*() const {
         return lemmatization_ptr_->last_lemma();
