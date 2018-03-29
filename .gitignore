@@ -30,8 +30,54 @@
 *.exe
 *.out
 *.app
+bin
 
 # Test examples files
-testing/unambiguos_lemmatizations.txt
-testing/unambiguos_lemmatizations_from_freq_list.txt
-testing/freq_list.txt
+test/data/unambiguos_lemmatizations.txt
+test/data/unambiguos_lemmatizations_from_freq_list.txt
+test/data/freq_list.txt
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Qt
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*_automoc.cpp
+
+# Qt unit tests
+target_wrapper.*
+
+# QtCreator
+*.autosave
+
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCreator CMake
+CMakeLists.txt.user*
