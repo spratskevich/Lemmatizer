@@ -106,3 +106,4 @@ for (auto &&lemma: lemmatize("Хливкие шорьки пырялись по 
 * [1] Abhisek Chakrabarty, Akshay Chaturvedi, Utpal Garain, "A Neural Lemmatizer for Bengali", 2016 (https://pdfs.semanticscholar.org/12c6/1ee4f804d4007fc12cfd0d13ba260c051e48.pdf);
 * [2] Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, Yoshua Bengio, "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation", 2014 (https://arxiv.org/pdf/1406.1078.pdf);
 * [3] Mike Kestemont, Guy de Pauw, Renske van Nie, Walter Daelemans, "Lemmatization for variation-rich languages using deep learning", 2016.
+* [4] Ю.Г. Зеленков, И.В. Сегалович, В.А. Титов, "Вероятностная модель снятия морфологической омонимии на основе нормализующих подстановок и позиций соседних слов", 2005 (http://www.dialog-21.ru/media/2444/zelenkov_segalovich.pdf).
