@@ -15,6 +15,9 @@ namespace lemmatizer {
     const std::string *Lemmatization::next_lemma() {
         return pimpl_->next_lemma();
     }
+	const std::string Lemmatization::get_stem() const{
+		return pimpl_->get_stem();
+	}
 
     LemmaIter Lemmatization::begin() {
         return LemmaIter(*this);

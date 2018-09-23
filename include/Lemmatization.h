@@ -15,6 +15,7 @@ namespace lemmatizer {
 
         const std::string &last_lemma() const;
         const std::string *next_lemma();
+		const std::string get_stem() const;
 
         LemmaIter begin();
         LemmaIter end() const;
